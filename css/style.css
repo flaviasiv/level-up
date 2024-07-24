@@ -417,6 +417,15 @@ swiper-slide.swiper1 {
     margin: auto;
     align-items: center;
 }
+.abouttitle{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    max-width: 664px;
+    padding: 0 50px;
+    margin: auto;
+}
 .about p{
     max-width:452px;
     text-align: center;
@@ -426,7 +435,7 @@ swiper-slide.swiper1 {
         padding: 0px 10px;
         flex-direction: column;
     }
-    .about img{
+    .aboutimg{
         position: absolute;
         top: 120px;
         width: 100%;
@@ -434,9 +443,11 @@ swiper-slide.swiper1 {
         padding: 0px 10px;
         margin: auto;
     }
-    .about p{
+    .abouttitle{
+        display: flex;
+        flex-direction: column;
         margin-top: 420px;
-        max-width:346px;
+        padding: 0 10px;
     }
 }
 .gallerycontainer{
@@ -452,7 +463,7 @@ swiper-slide.swiper1 {
     padding: 0 50px;
     margin: auto;
 }
-.gallerytitle h2, .reviewstitle h2{
+.gallerytitle h2, .reviewstitle h2, .abouttitle h2{
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
