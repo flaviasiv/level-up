@@ -100,7 +100,7 @@ footer{
     height: 55px;
 }
 .opentime ul{height: 105px;}
-.address ul li {
+.address ul li a{
     position: relative;
     display: flex;
     text-decoration: none;
@@ -116,7 +116,7 @@ footer{
     width: 100%;
     white-space: nowrap;
 }
-.footerinfos ul li {
+.footerinfos ul li a{
     position: relative;
     display: flex;
     flex-direction: column;
