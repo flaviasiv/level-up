@@ -16,9 +16,12 @@ html{
 .bg-blue{
     background: linear-gradient(180deg, #000D16 0%, #0B2749 100%);
 }
+.bg-blue-rev{
+    background: linear-gradient(180deg, #0B2749 0%, #000D16 100%);
+}
 :root {
     --swiper-navigation-color: #eee;
-    --swiper-pagination-color: #333333cc;
+    --swiper-pagination-color: #fff;
     --swiper-pagination-bullet-width: 10px;
     --swiper-pagination-bullet-height: 10px;
     --scroll: 0
@@ -57,7 +60,7 @@ swiper-container{
     text-align: center;
     padding: 157px 0 70px;
 }
-.posterinfos a{
+/* .posterinfos a{
     display: flex;
     justify-content: center;
     color: #000;
@@ -71,7 +74,7 @@ swiper-container{
     background: linear-gradient(90deg, #8E8E8E 0%, #FDFDFD 100%);
     border-radius: 100px;
     margin: auto;
-}
+} */
 .postergrid{
     padding-bottom: 80px;
 }
@@ -84,14 +87,24 @@ swiper-container.mySwiper1 {
 }
 swiper-slide.swiper1 {
   max-width: 326px;
-  border-radius: 30px;
-  margin-bottom: 30px;
 }
 .swiper1 img {
   width: 320px !important;
   max-width: 100% !important;
   margin: auto;
   object-fit: cover !important;
+}
+@media screen and (max-width:990px) {
+    .posterinfos{
+        font-size: 36px;
+        line-height: 150%;
+    }
+    swiper-slide.swiper1 {
+      max-width: 212px;
+    }
+    .swiper1 img {
+      width: 206px !important;
+    }
 }
 .servicescontainer{
     padding-bottom: 110px;
@@ -241,7 +254,7 @@ swiper-slide.swiper1 {
   text-align: center;
   width: 190px;
   list-style: none;
-  color: #0B2749;
+  color: #000;
   border-radius: 100px;
   padding: 12px 0;
   background: linear-gradient(90deg, #8E8E8E 0%, #FDFDFD 100%);
@@ -255,6 +268,22 @@ swiper-slide.swiper1 {
     font-size: 16px;
     font-weight: 700;
 }
+@media screen and (max-width:990px) {
+    .servicestitle{
+        padding: 70px 10px 50px 10px;
+    }
+    .servicestitle img{
+        max-width: 200px;
+    }
+    .servicestitle h2{
+        font-size: 36px;
+        max-width: 280px;
+        margin: auto;
+    }
+    .servicestitle p{
+        max-width: 290px;
+    }
+}
 .preferencecontainer{
     color: #fff;
 }
@@ -262,6 +291,7 @@ swiper-slide.swiper1 {
     display: block;
     width: 100%;
     object-fit: cover;
+    height: 960px;
 }
 .videdobg::after {
     content: '';
@@ -296,6 +326,11 @@ swiper-slide.swiper1 {
     gap: 40px;
     text-align: center;
     margin: auto;
+}
+.preferencetitle p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
 }
 .preferencegrid, .gallerygrid{
     display: flex;
@@ -338,6 +373,24 @@ swiper-slide.swiper1 {
     font-weight: 700;
     line-height: 140%;
 }
+@media screen and (max-width:830px) {
+    .videoimg {
+        display: block;
+        object-fit: cover;
+        height: 1000px;
+    }
+    .logopref{
+        padding-top: 80px;
+        width: 200px;
+        margin: auto
+    }
+    .preferencetitle{
+        max-width: 427px;
+    }
+    .preferencecard{
+        margin: auto;
+    }
+}
 .aboutcontainer{
     background: var(--primary-main, #0B2749);
     padding: 120px 0;
@@ -351,13 +404,30 @@ swiper-slide.swiper1 {
     align-items: center;
 }
 .about p{
-    width:452px;
+    max-width:452px;
     text-align: center;
     font-size: 16px;
     font-weight: 300;
     line-height: 150%;
 }
-
+@media screen and (max-width:990px) {
+    .about{
+        padding: 0px 10px;
+        flex-direction: column;
+    }
+    .about img{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+        max-width:402px;
+        padding: 0px 10px;
+        margin: auto;
+    }
+    .about p{
+        margin-top: 420px;
+        max-width:346px;
+    }
+}
 .gallerycontainer{
     padding: 0 0 120px;
     background: var(--primary-main, #0B2749);
@@ -371,16 +441,15 @@ swiper-slide.swiper1 {
     padding: 0 50px;
     margin: auto;
 }
-.gallerytitle h2{
+.gallerytitle h2, .reviewstitle h2{
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
 }
-.gallerytitle p{
+.gallerytitle p, .reviewstitle p{
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
-
 }
 .gallerygrid{
     max-width: 955px;
@@ -409,6 +478,7 @@ swiper-slide.swiper1 {
     max-width: 9999px;
     margin: auto;
     padding: 80px 0;
+    color: #000;
 }
 .ig-embed h2{
     display: flex;
@@ -427,6 +497,16 @@ swiper-slide.swiper1 {
     height:810px;
 }
 @media screen and (max-width:980px) {
+    .gallerytitle, .reviewstitle{
+        max-width: 369px;
+        padding: 0 10px;
+    }
+    .gallerytitle h2, .reviewstitle h2{
+        font-size: 36px;
+    }
+    .gallerygrid img{
+        margin: auto;
+    }
     .ig-embed iframe{
         width:500px; 
         height:500px;
@@ -450,7 +530,7 @@ swiper-slide.swiper1 {
     background-position: 100%;
     background-size: cover;
     /* background-size: 100%; */
-    padding: 130px 50px;
+    padding: 230px 50px;
 }
 .formp{
     display: flex;
@@ -463,29 +543,19 @@ swiper-slide.swiper1 {
     padding-bottom: 40px;
 }
 .formp h2{
-    width: 270px;
-    
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%;
+    width: 270px;    
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
 }
 .formp p{
-    width: 270px;
-    
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
-padding-top: 14px;
-
-}
-.formp ul li{
-    color: #fff;
+    width: 270px;    
     font-size: 16px;
-    font-weight: 300;
+    font-style: normal;
+    font-weight: 400;
     line-height: 150%;
-    list-style: none;
+    padding-top: 14px;
 }
 .formp img{
     color: #fff;
@@ -494,7 +564,6 @@ padding-top: 14px;
     z-index: 99;
     margin-bottom: 30px;
 }
-
 form {
     list-style: none;
     display: flex;
@@ -549,11 +618,15 @@ form button{
     outline: 1px solid #fff;     /* oranges! yey */
 }
 @media screen and (max-width:980px) {
+    .formp{
+        flex-direction: column;
+    }
     .formp h2{
-        font-size: 60px;
+        width: 270px;    
+        font-size: 36px;
     }
     .formgrid{
-    padding: 130px 20px;
+    padding: 130px 10px;
     }
 }
 .mapscontainer{
@@ -640,13 +713,13 @@ line-height: 150%;
     width: 100%;
     max-width: 9999px;
     margin: auto;    
-    padding: 50px 50px 0;
 }
 .popupgrid{
     display: flex;
     width: 100%;
-    max-width: 1400px;
+    max-width: 656px;
     margin: auto;
+    padding: 0 50px 0;
     justify-content: center;
 }
 .popup .content{
@@ -656,65 +729,60 @@ line-height: 150%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 656px;
     z-index: 1;
     gap: 32px;
-    padding: 200px 10px 100px 10px;
+    padding: 200px 0 32px 0;
     color: #fff;
 }
 .popupimg{
     width: 100%;
-    max-width: 700px;
+    max-width: 9999px;
     margin: auto;
-    flex-shrink: 1;
-}
-.callnowpopup{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 8px 6px;
-    color:#000;
-    background-color: #F4C977;
-    border-radius: 72px;
-    width:180px;
-    font-size: 16px;
-    font-weight: 800;
-    gap: 9px;
-    line-height: 100%;
-    text-decoration: none; 
-}
-.callnowpopup:hover svg{
-    fill: #fff;
-    transition: 0.2s all ease-in-out;
-}
-.popup .content .popttlbtn{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.callnowpopup{
-    margin-left: 0;
+    height: 100%;
+    bottom: 0;
 }
 .popup .content h1{
     display: flex;
-    flex-direction: column;font-size: 72px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; 
-    color: #F4C977;
+    flex-direction: column;
+    font-size: 72px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 120%;
 }
 .popup .content p{
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
 }
+.popupimgm{display: none;}
 @media screen and (max-width:800px) {
-    .popuptest{padding: 0 0 30px;}    
+    .popuptest{
+    padding-bottom: 100px;
+    }
+    .popupgrid{
+        padding: 50px 40px 0;
+    }
+    .popupimg{display: none;}
+    .popupimgm{
+        display: block;
+        width: 100%;
+        max-width: 900px;
+        margin: auto;
+        padding: 0 40px;
+    }
 }
 
 a{
     text-decoration: none;
     color: inherit;
+}
+.servicesbutton:hover{
+    background: #FFF;
+}
+.btnservice:hover{
+    background: linear-gradient(90deg, #8E8E8E 0%, #FDFDFD 100%);
+}
+.swiper2:hover {
+    box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5); 
+  transition: 0.1s ease-in;
 }

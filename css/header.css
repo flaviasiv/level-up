@@ -83,7 +83,9 @@ header {
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
-    color: #265083;
+    background: linear-gradient(90deg, #8E8E8E 0%, #fff 50%, #fff 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     transition: 0.2s ease-in-out;
 }
 .menusocial{
@@ -132,7 +134,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 10px;
-    color: #000;
+    color: #0B2749;
     font-family: 'Urbanist', sans-serif;
     font-size: 12px;
     font-style: normal;
@@ -141,6 +143,7 @@ header {
     align-items: center;
     padding: 8px 0px;
     width: 149px;
+    text-align: left;
 }
 .callnow:hover{
   background: none;
@@ -155,7 +158,7 @@ top: -30px;
 left: 0;
 position: absolute;
 }
-.logow{display: none;}
+.logow, .callm{display: none;}
 @media only screen and (max-width: 1100px) {
     .logow{
     z-index: 9;
@@ -165,7 +168,14 @@ position: absolute;
     left: 25px;
     position: absolute;
     }
-    .logo-m{display: none;}
+    .logo-m, .callw{display: none;}
+    .callm{
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      z-index: 99;
+    }
   .box{
     width: fit-content;
     height: 0vh;
@@ -228,26 +238,26 @@ position: absolute;
     background-color:#0B2749;
     flex-direction: column;
     align-items:center;
-    margin-top: 50px;
+    margin-top: 60px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
     padding-top: 0px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:260px;
+    height:220px;
   }
   .menu-links ul{
       display: block;
   }
   .menu-linksbtn{
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 0px;
   }
   .menu-linksbtn ul{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 3px;
   }
   .menusocial ul{
       display: flex;
@@ -256,7 +266,7 @@ position: absolute;
       width: 150px;
       justify-content: center;
       margin: auto;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
   }
   .menusocial ul a {
       text-decoration:none;
