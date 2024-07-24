@@ -35,12 +35,6 @@ html{
     opacity: 0.2;
     transition: 0.5s all ease;
 }
-.reveal.revealtext.aboutimg{
-    position: absolute;
-    transform: translateX(0%);
-    opacity: 0.2;
-    transition: 0.5s all ease;
-}
 .reveal.active.revealtext{
     transform: translateX(0%);
     opacity: 1;
@@ -441,6 +435,20 @@ swiper-slide.swiper1 {
     background: var(--primary-main, #0B2749);
     padding: 120px 0;
 }
+.aboutcontainer h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+.aboutcontainer .vetor1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
 .about{
     display: flex;
     justify-content: space-between;
@@ -467,9 +475,19 @@ swiper-slide.swiper1 {
         padding: 0px 10px;
         flex-direction: column;
     }
+    .reveal.revealtext.aboutimg{
+        position: absolute;
+        transform: translateX(0%);
+        opacity: 0.2;
+        transition: 0.5s all ease;
+    }
+    .reveal.active.revealtext{
+        transform: translateX(0%);
+        opacity: 1;
+    }
     .aboutimg{
         position: absolute;
-        top: 120px;
+        top: 270px;
         width: 100%;
         max-width:402px;
         padding: 0px 10px;
@@ -478,7 +496,7 @@ swiper-slide.swiper1 {
     .abouttitle{
         display: flex;
         flex-direction: column;
-        margin-top: 420px;
+        margin-top: 450px;
         padding: 0 10px;
     }
 }
@@ -495,7 +513,7 @@ swiper-slide.swiper1 {
     padding: 0 50px;
     margin: auto;
 }
-.gallerytitle h2, .reviewstitle h2, .abouttitle h2{
+.gallerytitle h2, .reviewstitle h2, .aboutcontainer h2{
     font-size: 48px;
     font-weight: 700;
     line-height: 120%;
