@@ -83,7 +83,7 @@ footer{
     line-height: 150%;
 }
 .footernav ul li a:hover {
-    color: #FFDE2E;
+    /* color: #000; */
     transition: 0.2s;
 }
 .address{
@@ -195,10 +195,11 @@ footer{
         margin-bottom: 36px;
     }
     .address {
-        margin-top: 66px;
+        margin-top: 36px;
     }
     .opentime{
         margin-top: 0;
+        text-align: left;
     }
     .address h3 {
         text-align: left;

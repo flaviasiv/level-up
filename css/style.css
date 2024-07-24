@@ -19,6 +19,26 @@ html{
 .bg-blue-rev{
     background: linear-gradient(180deg, #0B2749 0%, #000D16 100%);
 }
+.reveal{
+    position: relative;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    transition: 0.5s all ease;
+}
+.reveal.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.reveal.revealtext{
+    position: relative;
+    transform: translateX(0%);
+    opacity: 0.2;
+    transition: 0.5s all ease;
+}
+.reveal.active.revealtext{
+    transform: translateX(0%);
+    opacity: 1;
+}
 :root {
     --swiper-navigation-color: #eee;
     --swiper-pagination-color: #fff;
@@ -102,7 +122,13 @@ swiper-slide.swiper1 {
         margin-top: 80px;
     }
     .posterinfos{
+        text-align: center;
+        padding: 107px 0 70px;
+    }
+    .posterinfos h3{
         font-size: 36px;
+        max-width: 390px;
+        margin: auto;
         line-height: 150%;
     }
     swiper-slide.swiper1 {
@@ -258,11 +284,11 @@ swiper-slide.swiper1 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 290px;
+  width: 240px;
   list-style: none;
   color: #000;
   border-radius: 100px;
-  padding: 18px 0;
+  padding: 16px 0;
   background: linear-gradient(90deg, #8E8E8E 0%, #FDFDFD 100%);
   cursor: pointer;
   border: 1px solid #0B2749;
@@ -271,7 +297,7 @@ swiper-slide.swiper1 {
 .servicesbutton a{
     color: inherit;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
 }
 @media screen and (max-width:990px) {
@@ -766,8 +792,27 @@ line-height: 150%;
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    height: 100%;
+    height: 350px;
+    object-fit: cover;
     bottom: 0;
+}
+.content1 .popupimg{
+    object-position: 0px 50%;
+}
+.content2 .popupimg{
+    object-position: 0px 50%;
+}
+.content3 .popupimg{
+    object-position: 0px 70%;
+}
+.content4 .popupimg{
+    object-position: 0px 60%;
+}
+/* .content5 .popupimg{
+    object-position: 0px 50%;
+} */
+.content6 .popupimg{
+    object-position: 0px 50%;
 }
 .popup .content h1{
     display: flex;

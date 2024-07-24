@@ -107,7 +107,7 @@
                 <button class="servicesbutton"><a href="#contact">Get a free estimate</a></button> 
             </div>
             <div class="postergrid" id="portfolio">
-                <swiper-container class="mySwiper1 reveal" space-between="10" slides-per-view="auto" loop="true" autoplay-delay="1000">
+                <swiper-container class="mySwiper1" space-between="10" slides-per-view="auto" loop="true" autoplay-delay="1000">
                   <swiper-slide class="swiper1">
                     <div class=" portifoliocard">
                       <img src="./assets/1portifolio.png" alt="image of clean house" draggable="false">
@@ -173,14 +173,14 @@
         </div>
         <div class="servicescontainer container bg-blue" id="services">
             <div class="servicestitle">
-                <img src="./assets/logo-f.png" alt="" draggable="false">
+                <img src="./assets/logo-f.png" class="reveal" alt="" draggable="false">
                 <small>Services</small>
-                <h2>Let Us Handle the Cleaning!</h2>
+                <h2 class="reveal revealtext">Let Us Handle the Cleaning!</h2>
                 <img class="vetor1" src="./assets/vetor1.svg" alt="">
-                <p>Experience the joy of a spotless space and let us take care of the cleaning, so you can focus on what truly matters!</p>
+                <p class="reveal revealtext">Experience the joy of a spotless space and let us take care of the cleaning, so you can focus on what truly matters!</p>
             </div>
             <div class="servicesgrid">
-                <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="5000" centered-slides="true">
+                <swiper-container class="mySwiper2 reveal" pagination="true" pagination-clickable="true" space-between="10" slides-per-view="auto" loop="true" navigation="true" autoplay-delay="2000" centered-slides="true">
                   <swiper-slide class="swiper2">
                     <div class="servicescard">
                       <img src="./assets/services1.png" alt="image of cleaner" draggable="false">
@@ -229,7 +229,7 @@
                       </div>
                     </div>
                   </swiper-slide>
-                  <swiper-slide class="swiper2">
+                  <!-- <swiper-slide class="swiper2">
                     <div class="servicescard">
                       <img src="./assets/services5.png" alt="image of cleaner">
                       <div class="sercardinfo">
@@ -240,7 +240,7 @@
                         See more  </a>
                       </div>
                     </div>
-                  </swiper-slide>
+                  </swiper-slide> -->
                   <swiper-slide class="swiper2">
                     <div class="servicescard">
                       <img src="./assets/services6.png" alt="image of cleaner">
@@ -288,12 +288,12 @@
           <div class="preferenceabs">
             
             <div class="preferencetitle">
-                <img class="logopref" src="./assets/logo-f.png" alt="">
+                <img class="logopref reveal" src="./assets/logo-f.png" alt="">
                 <img class="vetor1" src="./assets/vetor1.svg" alt="">
-                <p>Choose Us for Tailored Cleaning and Unmatched Care! Our services are customized to meet your unique needs with meticulous attention. Your home is in the hands of caring professionals who prioritize your satisfaction!</p>
+                <p class="reveal revealtext">Choose Us for Tailored Cleaning and Unmatched Care! Our services are customized to meet your unique needs with meticulous attention. Your home is in the hands of caring professionals who prioritize your satisfaction!</p>
             </div>
             <div class="preferencegrid">
-                <div class="preferencecard">
+                <div class="preferencecard reveal">
                     <svg width="63" height="80" viewBox="0 0 63 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_10007_678)">
                     <path d="M59.7123 53.723C57.7346 52.9819 55.5083 53.229 53.5306 54.464L41.6627 61.6338C41.1686 61.2625 40.673 60.8928 40.179 60.7685L22.2537 54.3397C20.8943 53.8457 19.4106 53.8457 18.1739 54.464C18.1739 54.464 18.0496 54.464 18.0496 54.5883L10.8798 58.9151V58.5438C10.8798 57.1844 9.76745 56.0704 8.40648 56.0704H2.47334C1.11396 56.0704 0 57.1828 0 58.5438V77.0874C0 78.4468 1.11236 79.5608 2.47334 79.5608H8.28377C9.64315 79.5608 10.7571 78.4484 10.7571 77.0874V76.4691C13.4775 74.9854 14.5898 73.626 16.4432 73.873L36.2236 78.1998C37.83 78.6938 39.5623 78.3241 41.0443 77.3344L61.196 61.3868C63.9163 59.5318 63.6693 55.2051 59.7123 53.7214V53.723ZM2.47334 77.089V58.5454H8.28377V77.089H2.47334ZM59.7123 59.4107C39.1893 74.9886 39.685 76.595 36.8403 75.7296L16.9357 71.4029H16.8114C13.9683 70.9089 11.9906 72.8866 10.7539 73.5049V61.637L19.1604 56.5676C19.9014 56.3206 20.6441 56.3206 21.3851 56.5676L39.3105 62.9964C40.9169 63.6147 41.5352 65.5925 40.5471 66.9518C39.8061 67.9415 38.5694 68.3112 37.3327 67.8172L26.6999 63.7375C26.0816 63.4904 25.3406 63.8618 25.0935 64.4785C24.8465 65.0952 25.2178 65.8379 25.8346 66.0849L36.4674 70.1646C38.6921 71.1543 41.1655 70.4116 42.5248 68.5582C43.5145 67.1989 43.8842 65.5909 43.1432 63.7375L54.8883 56.6904C56.125 55.9493 57.6087 55.7007 58.9681 56.1963C60.8231 56.8147 60.9458 58.5454 59.7091 59.4107H59.7123Z" fill="#EEEEEE"/>
@@ -313,7 +313,7 @@
                     </svg>
                     <h3>Comprehensive Cleaning Solutions</h3>
                     </div>
-                <div class="preferencecard">
+                <div class="preferencecard reveal">
                     <svg width="69" height="68" viewBox="0 0 69 68" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_10007_692)">
                         <path d="M28.0321 17.3211L23.0666 22.2732L20.7862 19.9928C18.0605 17.4156 14.1744 21.2882 16.7652 24.0139L21.0561 28.3048C22.1085 29.4112 24.0246 29.4112 25.0771 28.3048L32.0532 21.3287C34.6304 18.6165 30.7578 14.7304 28.0321 17.3211ZM30.5014 19.7904L23.5254 26.7665C23.2825 27.0094 22.8507 27.0094 22.5943 26.7665L18.3169 22.4621C17.7232 21.8549 18.6273 20.9374 19.248 21.5311L23.0801 25.3632L29.5839 18.8594C30.1911 18.2657 31.1086 19.1832 30.5014 19.7904ZM68.094 30.5581C67.6757 28.858 66.4208 27.5221 64.8691 27.0094V22.0573C64.9905 18.657 60.8615 16.3496 58.0414 18.2117C57.5287 12.9628 50.0938 12.6524 49.1223 17.7934C47.7595 16.8759 45.7894 16.8489 44.4131 17.699C44.2647 17.5505 44.2242 17.3077 44.3186 17.1187C46.3696 13.4351 43.509 8.46949 39.2991 8.41552C39.0427 8.40202 38.8268 8.18613 38.8133 7.92976C38.7459 3.70633 33.7938 0.832239 30.0966 2.89673C29.8672 3.01817 29.5704 2.93721 29.4354 2.72131C27.2495 -0.908406 21.5553 -0.908406 19.3694 2.72131C19.2345 2.93721 18.9376 3.01817 18.7082 2.89673C15.0245 0.845733 10.059 3.70633 10.005 7.92976C9.9915 8.18613 9.7756 8.40202 9.51923 8.41552C5.2958 8.48298 2.4352 13.4351 4.4862 17.1187C4.60764 17.3481 4.52668 17.645 4.31078 17.7799C0.681066 19.9389 0.681066 25.687 4.31078 27.8325C4.52668 27.9674 4.60764 28.2643 4.4862 28.4937C3.54166 30.3153 3.59563 32.4472 4.62113 34.2149C5.64663 35.9825 7.46823 37.1024 9.50573 37.1969C9.7756 37.2104 9.9915 37.4263 9.9915 37.6827C10.0185 38.2359 10.1264 38.7621 10.2883 39.2749C9.06045 42.6077 7.22535 45.6033 5.28231 48.7472C3.39323 51.8777 1.40971 55.1026 0.0738633 58.6783C-0.303951 59.6094 0.829493 60.5539 1.66608 60.0007C4.2703 58.4085 5.97047 57.6124 8.69613 56.4519C9.27635 59.1641 9.73512 60.8508 10.909 64.0217C11.2194 64.9528 12.6497 64.9663 12.96 64.0217C15.4698 57.3425 20.206 52.0801 22.8777 45.4548C23.8627 45.7247 24.9557 45.7247 25.9542 45.4548C28.6258 52.0801 33.362 57.3425 35.8718 64.0217C36.1821 64.9528 37.6124 64.9528 37.9228 64.0217C39.0967 60.8508 39.5555 59.1641 40.1357 56.4519C40.9318 56.7893 41.6335 57.0996 42.3081 57.41C41.2691 57.7743 40.5135 58.7593 40.5135 59.9197V64.9258C40.5135 66.3966 41.7144 67.5975 43.1852 67.5975H63.4118C64.8826 67.5975 66.0835 66.3966 66.0835 64.9258V59.9197C66.0835 58.449 64.8826 57.248 63.4118 57.248H62.3188V53.0516C64.3158 50.9197 66.8256 47.4519 68.0805 42.5403C69.052 38.6947 69.052 34.5522 68.094 30.5581ZM58.0684 22.0573C58.1629 18.9943 62.6022 19.0078 62.6831 22.0573V26.753H58.0684V22.0573ZM51.2542 18.5625C51.2003 16.5655 53.8315 15.486 55.2078 16.9298C55.6396 17.3616 55.8825 17.9418 55.8825 18.5625V26.753C54.0878 26.6046 52.2797 27.4547 51.3892 29.0334C51.2947 28.777 51.2542 28.5476 51.2542 28.2508V18.5625ZM44.3726 21.5851C44.3456 19.588 46.9229 18.4816 48.3262 19.9524C48.758 20.3841 49.0008 20.9644 49.0008 21.5851V27.792C48.9064 30.828 44.4671 30.8415 44.3726 27.792V21.5851ZM12.029 60.5958C11.4083 58.6527 11.071 57.128 10.5582 54.6992C10.4908 54.3753 10.2884 54.1054 9.9915 53.9435C9.69464 53.7951 9.35731 53.7816 9.06045 53.903C6.7126 54.9016 5.10689 55.5897 3.40673 56.4803C5.94348 51.3258 9.42477 46.9405 11.7186 41.6376C13.5403 43.4592 16.4278 43.9449 18.7082 42.7305C18.9376 42.6091 19.221 42.69 19.3559 42.9059C19.7607 43.5266 20.2734 44.0799 20.8806 44.5117C18.6542 50.1384 14.6602 55.023 12.029 60.5958ZM26.0756 43.0814C25.0501 43.5941 23.7817 43.6076 22.7292 43.0814C21.7982 42.7035 21.3664 41.786 20.6917 41.1383C20.0306 40.5581 19.113 40.3692 18.2764 40.5851C16.1715 41.7455 13.4593 41.2597 12.4878 38.8984C12.3124 38.4936 12.2179 38.0618 12.2044 37.6165C12.1369 36.2267 11.044 35.1203 9.62717 35.0393C6.95548 34.9988 5.14737 31.8684 6.44274 29.5205C7.09042 28.2791 6.68562 26.7679 5.4982 25.9987C4.40524 25.3106 3.75756 24.1232 3.75756 22.8143C3.75756 21.5054 4.40524 20.3315 5.4982 19.6299C6.67212 18.8742 7.07693 17.363 6.42924 16.1081C5.83554 14.9612 5.86252 13.5983 6.5102 12.4784C7.15789 11.3584 8.31832 10.6568 9.61368 10.5893C11.017 10.5083 12.11 9.41538 12.1774 8.01207C12.2179 5.32688 15.3619 3.51877 17.6962 4.82763C18.9376 5.46182 20.4489 5.05702 21.2045 3.88309C22.5943 1.58922 26.197 1.57572 27.5869 3.88309C28.3425 5.05702 29.8537 5.46182 31.0951 4.82763C33.4295 3.51877 36.5734 5.32688 36.6139 8.01207C36.6814 9.40188 37.7744 10.5083 39.1912 10.5893C41.8629 10.6298 43.671 13.7737 42.3756 16.1081C41.8359 17.1741 42.0383 18.4155 42.8344 19.2386C42.4701 19.8323 42.2542 20.5069 42.1867 21.2086C41.0937 20.5609 39.7309 20.3855 38.5165 20.7768C35.44 3.42432 10.7201 5.0975 10.1264 22.8143C10.1129 35.7814 26.2645 41.9884 34.9273 32.4486C34.5629 35.0933 34.6439 37.792 35.1566 40.4097C34.0097 41.3137 32.3905 41.4756 31.0951 40.7875C30.2855 40.3557 29.26 40.3692 28.4909 40.8549C27.5599 41.4217 27.1821 42.6496 26.0756 43.0814ZM42.1867 31.2746C42.1057 34.3242 37.6529 34.3242 37.572 31.2746V25.0677C37.6664 22.0047 42.1462 22.0722 42.1867 25.0947V31.2746ZM35.3725 27.9013C29.7998 39.5326 12.4878 35.714 12.3258 22.8143C12.9331 7.18897 34.9947 6.62225 36.479 22.1261C35.0757 23.5294 35.386 26.0932 35.3725 27.9013ZM39.7579 53.903C39.1507 53.6197 38.3816 54.0245 38.2601 54.6857C37.7609 57.128 37.41 58.6527 36.7893 60.5823C34.1716 55.0095 30.1776 50.1249 27.9242 44.4982C28.5179 44.0664 29.0306 43.5131 29.4354 42.8924C29.5704 42.6766 29.8672 42.5956 30.0966 42.717C31.8508 43.6346 34.0232 43.5806 35.7504 42.6226C37.2076 47.1698 39.8928 50.7051 43.0503 53.2149V55.3198C42.0653 54.8881 40.9993 54.4428 39.7579 53.903ZM63.3983 59.4488C63.6547 59.4488 63.8705 59.6647 63.8705 59.9211V61.3244H55.3158C54.7085 61.3244 54.2228 61.8102 54.2228 62.4174C54.2228 63.0246 54.7085 63.5103 55.3158 63.5103H63.884V64.9136C63.884 65.17 63.6682 65.3859 63.4118 65.3859H43.1717C42.9153 65.3859 42.6994 65.17 42.6994 64.9136V63.5103H49.3517C49.9589 63.5103 50.4446 63.0246 50.4446 62.4174C50.4446 61.8102 49.9589 61.3244 49.3517 61.3244H42.6994V59.9211C42.6994 59.6647 42.9153 59.4488 43.1717 59.4488H63.3983ZM60.4297 51.852C60.2273 52.0544 60.1194 52.3378 60.1194 52.6212V57.2494H45.2362V52.6886C45.2362 52.3378 45.0743 52.014 44.8044 51.8116C39.7579 48.1953 36.4385 41.1518 36.9243 34.6615C39.6634 37.0768 44.0893 35.2687 44.3591 31.6255C46.1133 32.6915 48.5016 32.3811 49.9184 30.8968C50.1613 31.2072 50.4177 31.504 50.728 31.7334C50.7955 34.1352 52.8869 36.2537 55.3158 36.2132H57.758C55.842 38.5476 54.776 41.5026 54.7355 44.5251C54.722 45.1323 55.2213 45.6316 55.8285 45.6316C56.4357 45.6316 56.9215 45.1458 56.9215 44.5521C56.746 41.4487 59.0399 37.3737 61.0774 35.9569C61.8735 35.3496 61.3878 33.9733 60.3893 34.0138H55.3158C52.1448 33.9193 52.1313 29.0213 55.3158 28.9133H63.3443C64.5857 28.9133 65.6787 29.8039 65.9755 31.0453C67.8646 38.1698 65.5842 46.819 60.4297 51.852Z" fill="#fff"/>
@@ -326,7 +326,7 @@
                         </svg>
                         <h3>Reliable and Experienced Team</h3>                        
                 </div>
-                <div class="preferencecard">
+                <div class="preferencecard reveal">
                   <svg width="75" height="70" viewBox="0 0 75 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_10007_699)">
                     <path d="M37.3382 19.7878C39.7645 19.7878 42.0896 18.5727 43.8852 16.3674C45.5252 14.3535 46.4655 11.8133 46.4655 9.39593C46.4655 4.52608 42.5421 0.85376 37.3382 0.85376C32.1343 0.85376 28.2109 4.52129 28.2109 9.39593C28.2109 11.8133 29.1513 14.3535 30.7912 16.3674C32.5868 18.5743 34.912 19.7878 37.3382 19.7878ZM37.3382 3.48482C41.0931 3.48482 43.8178 5.97077 43.8178 9.39593C43.8178 13.7013 40.2731 17.1567 37.3382 17.1567C33.7486 17.1567 30.8586 12.9104 30.8586 9.39593C30.8586 5.88147 33.5833 3.48482 37.3382 3.48482Z" fill="white"/>
@@ -346,7 +346,7 @@
                                      
                     <h3>Highly Skilled Cleaning Professionals</h3>
                 </div>
-                <div class="preferencecard">
+                <div class="preferencecard reveal">
                     <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
                         <g clip-path="url(#clip0_10007_705)">
                           <path d="M58.9066 50.573C58.7709 50.3155 58.5392 50.1223 58.2609 50.036L54.074 48.7291C53.4968 48.5482 52.8826 48.8688 52.7016 49.4455C52.7016 49.4455 52.7016 49.4469 52.7016 49.4483L52.3726 50.499L42.9568 47.5605L38.5341 46.1714C37.6553 45.8946 36.6997 46.0001 35.9018 46.4604L24.5022 53.0403C23.7057 53.4677 23.1189 54.202 22.879 55.0733L13.906 52.2745C12.1717 51.7333 10.3264 52.6992 9.78486 54.4321L9.13091 56.524C8.58938 58.257 9.55591 60.101 11.2902 60.6435L34.3841 67.8494C35.2067 68.1083 36.0992 68.0316 36.8656 67.637L46.3911 62.7395C46.6474 62.6093 46.9449 62.5833 47.2191 62.6683L48.4503 63.0532L48.124 64.0944C47.9444 64.6725 48.2666 65.2862 48.8437 65.4671L53.032 66.774C53.1376 66.8069 53.2487 66.8233 53.3597 66.8233C53.8395 66.8233 54.2632 66.5123 54.4058 66.0548L58.9834 51.4087C59.0698 51.1306 59.0424 50.8306 58.908 50.573H58.9066ZM47.8717 60.5763C47.0464 60.3161 46.1525 60.3941 45.3848 60.7914L35.8648 65.6862C35.6084 65.8178 35.3109 65.8424 35.0367 65.7561L11.9428 58.5502C11.3642 58.3694 11.042 57.7556 11.223 57.1775L11.877 55.0856C12.0552 54.5089 12.668 54.1869 13.2438 54.365C13.2466 54.365 13.2479 54.365 13.2507 54.3664L23.1257 57.4474C23.1257 57.4474 23.1326 57.4611 23.1353 57.4679L24.154 59.4078C24.9971 61.0161 26.9864 61.6367 28.5959 60.7942L37.3386 56.2158C37.876 55.9377 38.0857 55.276 37.8074 54.739C37.5291 54.202 36.867 53.9924 36.3295 54.2705C36.3268 54.2719 36.3227 54.2732 36.3199 54.276L27.5773 58.8543C27.0412 59.1352 26.3777 58.9283 26.0966 58.3927L25.0794 56.4514C25.0451 56.3857 25.0163 56.3186 24.9957 56.2473C24.8518 55.7473 25.0794 55.213 25.5414 54.9719C25.5551 54.965 25.5674 54.9568 25.5812 54.95L36.9986 48.3592C37.2645 48.2057 37.5826 48.1715 37.8746 48.2633L42.3001 49.6538L51.7173 52.5923L49.1028 60.9613L47.8717 60.5777V60.5763ZM52.6372 64.3547L50.5437 63.7012L54.4674 51.1484L56.5609 51.8018L52.6372 64.3547Z" fill="white"/>
@@ -371,30 +371,30 @@
         </div>
         <div class="aboutcontainer container" id="aboutus">
             <div class="about">
-              <div class="abouttitle">
+              <div class="abouttitle reveal revealtext">
                 <h2>About us</h2>
                 <img src="./assets/vetor1.svg" alt="" class="vetor1">
                 <p>My name is Talita, owner of Level-Up Cleaning, and I am from São Paulo, Brazil. I graduated in physiotherapy and excelled in this profession for nearly 14 years in my home country. When I had the opportunity to come to the United States, I decided to start my own business. Despite the uncertainties and challenges, I embraced this new path with determination and confidence. My success in a different profession would depend entirely on my dedication and hard work. For the past seven years, I have been fully committed to this new journey, which has proven challenging and immensely rewarding. I take great pride in the responsibilities it entails and the positive impact I can make. This experience has broadened my horizons and reinforced my belief in the power of perseverance and adaptability.</p>
               </div>
-                <img src="./assets/Level-Up1.png" class="aboutimg" alt="">
+                <img src="./assets/Level-Up1.png" class="aboutimg reveal revealtext" alt="">
             </div>
         </div>
         <div class="gallerycontainer container" id="Gallery">
-            <div class="gallerytitle">
+            <div class="gallerytitle reveal revealtext">
                 <h2>Gallery</h2>
                 <img src="./assets/vetor1.svg" alt="" class="vetor1">
                 <p>Experience the transformation! At Level-up Cleaning, we take pride in showcasing our immaculate cleaning projects. From gleaming kitchens to pristine living spaces, our meticulous attention to detail ensures every corner sparkles!</p>
             </div>
             <div class="gallerygrid">
-                <img src="./assets/gallery1.png" alt="">
-                <img src="./assets/gallery2.png" alt="">
-                <img src="./assets/gallery3.png" alt="">
-                <img src="./assets/gallery4.png" alt="">
+                <img class="reveal" src="./assets/gallery1.png" alt="">
+                <img class="reveal" src="./assets/gallery2.png" alt="">
+                <img class="reveal" src="./assets/gallery3.png" alt="">
+                <img class="reveal" src="./assets/gallery4.png" alt="">
             </div>
             <button class="servicesbutton"><a href="#contact">Get a free estimate</a></button>     
         </div>
         <div class="reviewscontainer container" id="reviews">
-            <div class="reviewstitle">
+            <div class="reviewstitle reveal revealtext">
                 <h2>Reviews</h2>
                 <img src="./assets/vetor1.svg" alt="" class="vetor1">
                 <p>At Level-up Cleaning, we are dedicated to providing exceptional services to our valued clients. Our team takes great pride in ensuring that every job is completed to the highest standards, regardless of its size. We value your feedback as it helps us continuously improve and grow. Count on us to exceed your cleaning needs and expectations.</p>                
@@ -412,8 +412,8 @@
         <div class="formgrid">
           <div class="form" id="contact">
             <div class="formp">
-                <img src="./assets/logo-f.png" alt="Level Up Cleaning logo" class="logoform" draggable="false">  
-                <div class="forminfos">
+                <img src="./assets/logo-f.png" alt="Level Up Cleaning logo" class="logoform reveal" draggable="false">  
+                <div class="forminfos reveal revealtext">
                   <h2>Get a free estimate</h2>
                   <p>Uncover the transformative power of our exceptional cleaning services.</p>
                 </div>
@@ -479,7 +479,7 @@
     <footer>
         <div class="footergrid">
           <div class="footerimglogo">
-            <img src="./assets/logo-f.png" alt="nelly Concrete logo" draggable="false">
+            <img src="./assets/logo-f.png" class="reveal" alt="nelly Concrete logo" draggable="false">
           </div>
           <div class="footermenu">
               <div class="footernav">

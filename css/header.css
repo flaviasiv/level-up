@@ -144,6 +144,7 @@ header {
     padding: 8px 0px;
     width: 149px;
     text-align: left;
+    margin: auto;
 }
 .callnow:hover{
   background: none;
@@ -171,9 +172,12 @@ position: absolute;
     .logo-m, .callw{display: none;}
     .callm{
       display: block;
+      width: 169px;
+      line-height: 150%;
       position: absolute;
       left: 50%;
-      transform: translate(-50%);
+      top: 50%;
+      transform: translate(-50%, -50%);
       z-index: 99;
     }
   .box{
@@ -189,7 +193,7 @@ position: absolute;
   }
 .btn-toggle {
     position:absolute;
-    right:30px;
+    right:20px;
     top:0px;
     display:none;
     flex-direction:column;
