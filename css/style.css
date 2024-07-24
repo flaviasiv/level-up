@@ -95,6 +95,12 @@ swiper-slide.swiper1 {
   object-fit: cover !important;
 }
 @media screen and (max-width:990px) {
+    .postercontainer{
+        background: url(../assets/posterbg-mob.jpg);
+        background-size: cover;
+        background-position: 100%;
+        margin-top: 80px;
+    }
     .posterinfos{
         font-size: 36px;
         line-height: 150%;
@@ -283,6 +289,10 @@ swiper-slide.swiper1 {
     .servicestitle p{
         max-width: 290px;
     }
+    .listareas{
+        gap: 36px;
+        padding-left: 0px;
+    }
 }
 .preferencecontainer{
     color: #fff;
@@ -388,7 +398,11 @@ swiper-slide.swiper1 {
         max-width: 427px;
     }
     .preferencecard{
+        max-width: 360px;
         margin: auto;
+    }
+    .preferencecard h3{
+        font-size: 22px;
     }
 }
 .aboutcontainer{
@@ -505,6 +519,7 @@ swiper-slide.swiper1 {
         font-size: 36px;
     }
     .gallerygrid img{
+        max-width: 350px;
         margin: auto;
     }
     .ig-embed iframe{
@@ -620,14 +635,19 @@ form button{
 @media screen and (max-width:980px) {
     .formp{
         flex-direction: column;
+        padding: 0;
     }
     .formp h2{
         width: 270px;    
         font-size: 36px;
     }
     .formgrid{
-    padding: 130px 10px;
-    }
+    padding: 100px 10px;
+    background: url(../assets/formbg-m.png) no-repeat;
+    background-size: 135%;
+    background-position-y: top;
+    background-position-x: right;
+}
 }
 .mapscontainer{
     position:relative;
