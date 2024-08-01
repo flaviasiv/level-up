@@ -60,27 +60,25 @@ footer{
     width: auto;
     column-gap: 32px;
 }
-.footernav{
+.footernav, .opentime{
     display: flex;
     width: 100%;
     max-width: 1440px;
     white-space: nowrap;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 .footernav ul, .address ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 125px;
+    height: 159px;
 }
 .footernav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 150%;
 }
 .footernav ul li a:hover {
     /* color: #000; */
@@ -99,7 +97,7 @@ footer{
 .address ul{    
     height: 55px;
 }
-.opentime ul{height: 105px;}
+.opentime ul{height: 159px;}
 .address ul li a{
     position: relative;
     display: flex;

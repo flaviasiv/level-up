@@ -51,14 +51,14 @@ header {
     display: flex;
     position: relative;
     background-color: transparent;
-    width:300px;
+    width:295px;
 }
 .menu-links{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
+    max-width: 1400px;
+    padding: 0;
     margin: auto;
     align-items: center;  
 }
