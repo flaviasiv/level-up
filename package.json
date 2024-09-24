@@ -10,5 +10,8 @@
   },
   "tags": [
     "swiper"
-  ]
+  ],
+  "dependencies": {
+    "swiper-slides-per-view": "file:"
+  }
 }
