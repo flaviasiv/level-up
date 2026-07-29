@@ -8,6 +8,24 @@
   var currentScript = document.currentScript;
   var policyHref = currentScript && currentScript.getAttribute("data-policy-href");
 
+  var TRANSLATIONS = {
+    en: {
+      ariaLabel: "Cookie notice",
+      textWithLink: 'We use cookies to improve your experience on this site. By continuing to browse, you agree to our <a href="{href}">Cookie Policy</a>.',
+      textNoLink: "We use cookies to improve your experience on this site. By continuing to browse, you agree to the use of cookies.",
+      accept: "Accept"
+    },
+    pt: {
+      ariaLabel: "Aviso de cookies",
+      textWithLink: 'Usamos cookies para melhorar sua experiência neste site. Ao continuar navegando, você concorda com nossa <a href="{href}">Política de Cookies</a>.',
+      textNoLink: "Usamos cookies para melhorar sua experiência neste site. Ao continuar navegando, você concorda com o uso de cookies.",
+      accept: "Aceitar"
+    }
+  };
+
+  var browserLang = ((navigator.language || navigator.userLanguage || "en") + "").toLowerCase();
+  var t = browserLang.indexOf("pt") === 0 ? TRANSLATIONS.pt : TRANSLATIONS.en;
+
   var style = document.createElement("style");
   style.textContent =
     "#cookie-consent-banner{position:fixed;left:0;right:0;bottom:0;z-index:99999;" +
@@ -30,13 +48,11 @@
   var banner = document.createElement("div");
   banner.id = "cookie-consent-banner";
   banner.setAttribute("role", "dialog");
-  banner.setAttribute("aria-label", "Aviso de cookies");
-  var text = policyHref
-    ? 'Usamos cookies para melhorar sua experiência neste site. Ao continuar navegando, você concorda com nossa <a href="' + policyHref + '">Política de Cookies</a>.'
-    : 'Usamos cookies para melhorar sua experiência neste site. Ao continuar navegando, você concorda com o uso de cookies.';
+  banner.setAttribute("aria-label", t.ariaLabel);
+  var text = policyHref ? t.textWithLink.replace("{href}", policyHref) : t.textNoLink;
   banner.innerHTML =
     '<p>' + text + '</p>' +
-    '<div class="cc-actions"><button type="button" class="cc-accept">Aceitar</button></div>';
+    '<div class="cc-actions"><button type="button" class="cc-accept">' + t.accept + '</button></div>';
 
   document.body.appendChild(banner);
 
