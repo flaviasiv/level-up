@@ -30,7 +30,7 @@
   style.textContent =
     "#cookie-consent-banner{position:fixed;left:0;right:0;bottom:0;z-index:99999;" +
     "background:#1a1a1a;color:#f2f2f2;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;" +
-    "font-size:14px;line-height:1.5;padding:16px 20px;display:flex;flex-wrap:wrap;" +
+    "font-size:14px;line-height:1.5;padding:16px 90px 16px 20px;display:flex;flex-wrap:wrap;" +
     "align-items:center;justify-content:center;gap:16px;box-shadow:0 -2px 10px rgba(0,0,0,.25);}" +
     "#cookie-consent-banner p{margin:0;flex:1 1 auto;max-width:640px;height:auto!important;min-height:0!important;line-height:1.5!important;}" +
     "#cookie-consent-banner a{color:#f2f2f2;text-decoration:underline;}" +
